@@ -105,10 +105,10 @@ export default class App extends Component {
                         {instructions}
                     </Text>
                 </Animated.View>
-                {/* { !isAnimDone && <Image source={{uri:'transparent'}} resizeMode="stretch" style={transStyle} onLoad={this.handleTransLoad} onError={this.handleTransError} /> } */}
-                { !isAnimDone && <Animated.Image source={TRANS} resizeMode="stretch" style={transStyle} onLoad={this.handleTransLoad} onError={this.handleTransError} /> }
-                {/* { !isAnimDone && <Image source={{uri:'solid'}} resizeMode="stretch" style={solidStyle} onLoad={this.handleSolidLoad} onError={this.handleSolidError} /> } */}
-                { !isAnimDone && <Animated.Image source={SOLID} resizeMode="stretch" style={solidStyle} onLoad={this.handleSolidLoad} onError={this.handleSolidError} /> }
+                { !isAnimDone && <Animated.Image source={{uri:'transparent'}} style={transStyle} onLoad={this.handleTransLoad} onError={this.handleTransError} /> }
+                {/* { !isAnimDone && <Animated.Image source={TRANS} style={transStyle} onLoad={this.handleTransLoad} onError={this.handleTransError} /> } */}
+                { !isAnimDone && <Animated.Image source={{uri:'solid'}} style={solidStyle} onLoad={this.handleSolidLoad} onError={this.handleSolidError} /> }
+                {/* { !isAnimDone && <Animated.Image source={SOLID} style={solidStyle} onLoad={this.handleSolidLoad} onError={this.handleSolidError} /> } */}
             </View>
         );
     }
