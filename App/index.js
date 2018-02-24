@@ -30,7 +30,7 @@ export default class App extends Component {
                 const { loadingProgress } = this.state;
                 Animated.timing(loadingProgress, {
                     toValue: 100,
-                    duration: 10000,
+                    duration: 1000,
                     useNativeDriver: true
                 }).start(this.setAnimDone);
             }
@@ -113,10 +113,10 @@ export default class App extends Component {
                     <Text style={styles.instructions}>To get started, edit App.js</Text>
                     <Text style={styles.instructions}>{instructions}</Text>
                 </Animated.View>
-                { !isAnimDone && <Animated.Image source={{uri:'transparent'}} style={transStyle} onLoad={this.handleTransLoad} onError={this.handleTransError} /> }
-                {/* { !isAnimDone && <Animated.Image source={TRANS} style={transStyle} onLoad={this.handleTransLoad} onError={this.handleTransError} /> } */}
-                { !isAnimDone && <Animated.Image source={{uri:'solid'}} style={solidStyle} onLoad={this.handleSolidLoad} onError={this.handleSolidError} /> }
-                {/* { !isAnimDone && <Animated.Image source={SOLID} style={solidStyle} onLoad={this.handleSolidLoad} onError={this.handleSolidError} /> } */}
+                { !isAnimDone && <Animated.Image source={{uri:'transparent'}} style={transStyle} onLoad={this.handleTransLoad} onError={this.handleTransError} fadeDuration={0} /> }
+                {/* { !isAnimDone && <Animated.Image source={TRANS} style={transStyle} onLoad={this.handleTransLoad} onError={this.handleTransError} fadeDuration={0} /> } */}
+                { !isAnimDone && <Animated.Image source={{uri:'solid'}} style={solidStyle} onLoad={this.handleSolidLoad} onError={this.handleSolidError} fadeDuration={0} /> }
+                {/* { !isAnimDone && <Animated.Image source={SOLID} style={solidStyle} onLoad={this.handleSolidLoad} onError={this.handleSolidError} fadeDuration={0} /> } */}
             </View>
         );
     }
