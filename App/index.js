@@ -134,7 +134,7 @@ export default class App extends Component {
         this.setState(() => ({ isTransLoaded:true }));
     }
     handleSolidError = e => {
-        console.log('solid errored, e:', Object.keys(e));
+        console.log('solid errored, e:', Object.keys(e), JSON.stringify(e.nativeEvent));
         this.setState(() => ({ isSolidLoaded:true }));
     }
     setAnimDone = () => this.setState(() => ({ isAnimDone:true }))
