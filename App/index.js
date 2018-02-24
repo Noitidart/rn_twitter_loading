@@ -77,8 +77,7 @@ export default class App extends Component {
             width: imgWidth,
             top: (-imgHeight / 2) + (winHeight / 2),
             left: (-imgWidth / 2) + (winWidth / 2),
-            transform: imageTransform,
-            opacity: imageOpacity
+            transform: imageTransform
         }
 
         const appAnimStyle = {
