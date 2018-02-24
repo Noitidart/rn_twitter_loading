@@ -94,15 +94,24 @@ export default class App extends Component {
         return (
             <View style={styles.loadingWrap}>
                 <Animated.View style={[styles.container, appAnimStyle]}>
-                    <Text style={styles.welcome}>
-                        Welcome to React Native!
-                    </Text>
-                    <Text style={styles.instructions}>
-                        To get started, edit App.js
-                    </Text>
-                    <Text style={styles.instructions}>
-                        {instructions}
-                    </Text>
+                    <Text style={styles.welcome}>Welcome to React Native!</Text>
+                    <Text style={styles.instructions}>To get started, edit App.js</Text>
+                    <Text style={styles.instructions}>{instructions}</Text>
+                    <Text style={styles.welcome}>Welcome to React Native!</Text>
+                    <Text style={styles.instructions}>To get started, edit App.js</Text>
+                    <Text style={styles.instructions}>{instructions}</Text>
+                    <Text style={styles.instructions}>{instructions}</Text>
+                    <Text style={styles.welcome}>Welcome to React Native!</Text>
+                    <Text style={styles.instructions}>To get started, edit App.js</Text>
+                    <Text style={styles.instructions}>{instructions}</Text>
+                    <Text style={styles.instructions}>{instructions}</Text>
+                    <Text style={styles.welcome}>Welcome to React Native!</Text>
+                    <Text style={styles.instructions}>To get started, edit App.js</Text>
+                    <Text style={styles.instructions}>{instructions}</Text>
+                    <Text style={styles.instructions}>{instructions}</Text>
+                    <Text style={styles.welcome}>Welcome to React Native!</Text>
+                    <Text style={styles.instructions}>To get started, edit App.js</Text>
+                    <Text style={styles.instructions}>{instructions}</Text>
                 </Animated.View>
                 { !isAnimDone && <Animated.Image source={{uri:'transparent'}} style={transStyle} onLoad={this.handleTransLoad} onError={this.handleTransError} /> }
                 {/* { !isAnimDone && <Animated.Image source={TRANS} style={transStyle} onLoad={this.handleTransLoad} onError={this.handleTransError} /> } */}
